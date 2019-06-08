@@ -5,6 +5,8 @@ Registeres the AKS WindowsPreview features in the Subscription
 https://docs.microsoft.com/en-us/azure/aks/windows-container-cli
 #>
 
+az extension add --name aks-preview
+
 az feature register --name WindowsPreview --namespace Microsoft.ContainerService
 
 do {
